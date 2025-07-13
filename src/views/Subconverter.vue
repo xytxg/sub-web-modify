@@ -340,8 +340,7 @@ export default {
       options: {
         clientTypes: { Clash: "clash", "Surge4/5": "surge&ver=4", "Sing-Box": "singbox", V2Ray: "v2ray", Trojan: "trojan", ShadowsocksR: "ssr", "混合订阅（mixed）": "mixed", Surfboard: "surfboard", Quantumult: "quan", "Quantumult X": "quanx", Loon: "loon", Mellow: "mellow", Surge3: "surge&ver=3", Surge2: "surge&ver=2", ClashR: "clashr", "Shadowsocks(SIP002)": "ss", "Shadowsocks Android(SIP008)": "sssub", ShadowsocksD: "ssd", "自动判断客户端": "auto" },
         shortTypes: { "v1.mk": "https://v1.mk/short", "d1.mk": "https://d1.mk/short", "dlj.tf": "https://dlj.tf/short", "suo.yt": "https://suo.yt/short" },
-        customBackend: { "小一HK后端": "https://subapi.xytx.org" },
-        backendOptions: [ { value: "https://subapi.zrfme.com" }, { value: "https://1060e98895bedf43d3d738e3b7fc9120a0cbbbcf-15051.dstack-prod8.phala.network" }, { value: "https://subapi.cmliussss.net" }, { value: "https://subapi.fxxk.dedyn.io" }, { value: "https://url.v1.mk" }, { value: "https://sub.d1.mk" }, { value: "https://www.nameless13.com" }, { value: "https://sub.xeton.dev" }, { value: "https://api.wcc.best" }, { value: "https://sub.xjz.im" }, { value: "https://api.sublink.dev" }, { value: "https://api.subcsub.com" } ],
+        customBackend: { "小一HK后端": "https://subapi.xytx.org" }],
         remoteConfig: [
           {
             label: "CM规则",
