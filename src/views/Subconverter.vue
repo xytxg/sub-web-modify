@@ -340,7 +340,7 @@ export default {
       options: {
         clientTypes: { Clash: "clash", "Surge4/5": "surge&ver=4", "Sing-Box": "singbox", V2Ray: "v2ray", Trojan: "trojan", ShadowsocksR: "ssr", "混合订阅（mixed）": "mixed", Surfboard: "surfboard", Quantumult: "quan", "Quantumult X": "quanx", Loon: "loon", Mellow: "mellow", Surge3: "surge&ver=3", Surge2: "surge&ver=2", ClashR: "clashr", "Shadowsocks(SIP002)": "ss", "Shadowsocks Android(SIP008)": "sssub", ShadowsocksD: "ssd", "自动判断客户端": "auto" },
         shortTypes: { "v1.mk": "https://v1.mk/short", "d1.mk": "https://d1.mk/short", "dlj.tf": "https://dlj.tf/short", "suo.yt": "https://suo.yt/short" },
-        customBackend: { "小一HK后端": "https://subapi.xytx.org" },
+        customBackend: { "小一HK后端": "https://subapi.xytx.org" }
         remoteConfig: [
           {
             label: "CM规则",
@@ -810,7 +810,7 @@ export default {
   },
 
   created() {
-    document.title = "ZRF.ME | 在线订阅转换工具";
+    document.title = "在线订阅转换";
     this.isPC = this.$getOS().isPc;
   },
   mounted() {
@@ -912,7 +912,7 @@ export default {
       window.open(downld);
     },
     gotoBasicVideo() {
-      this.$alert("别忘了关注友善的肥羊哦！", {
+      this.$alert("", {
         type: "warning",
         confirmButtonText: '确定',
         customClass: 'msgbox',
@@ -923,7 +923,7 @@ export default {
         });
     },
     gotoAdvancedVideo() {
-      this.$alert("别忘了关注友善的肥羊哦！", {
+      this.$alert("", {
         type: "warning",
         confirmButtonText: '确定',
         customClass: 'msgbox',
@@ -1278,7 +1278,7 @@ export default {
           this.backendVersion = this.backendVersion.replace("subconverter", "SubConverter");
           let a = this.form.customBackend.indexOf("url.v1.mk") !== -1 || this.form.customBackend.indexOf("sub.d1.mk") !== -1;
           let b = this.form.customBackend.indexOf("127.0.0.1") !== -1;
-          a ? this.$message.success(`${this.backendVersion}` + "肥羊负载均衡增强版后端，已屏蔽免费节点池（会返回403），额外支持vless reality+hysteria+hysteria2订阅转换") : b ? this.$message.success(`${this.backendVersion}` + "本地局域网自建版后端") : this.$message.success(`${this.backendVersion}`);
+          a ? this.$message.success(`${this.backendVersion}` + "已屏蔽免费节点池（会返回403），额外支持vless reality+hysteria+hysteria2订阅转换") : b ? this.$message.success(`${this.backendVersion}` + "本地局域网自建版后端") : this.$message.success(`${this.backendVersion}`);
         })
         .catch(() => {
           this.$message.error("请求SubConverter版本号返回数据失败，该后端不可用！");
